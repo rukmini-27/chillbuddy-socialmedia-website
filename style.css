@@ -208,6 +208,7 @@ main .container .left .profile {
   text-align: center;
   padding: 0.5rem 0;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* ==========================MIDDLE============================ */
@@ -244,13 +245,13 @@ main .container .left .profile {
 }
 
 .middle .stories .story .name {
-  z-index: 99;
+  z-index: 90;
   position: absolute;
   top: 9rem;
 }
 
 .middle .stories .story:nth-child(1) {
-  background-image: url(./images/story-2.jpg);
+  background-image: url(./images/story-9.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -380,4 +381,97 @@ main .container .left .profile {
 
 .middle .feed .caption .hashtag {
   color: var(--color-primary);
+}
+
+/* ==========================RIGHT SECTION============================ */
+
+.right {
+  width: auto;
+  position: sticky;
+  top: var(--sticky-top-right);
+}
+
+.right .messages {
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+}
+
+.right .messages .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.right .messages i {
+  font-size: 1.2rem;
+}
+
+.right .messages .search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.right .messages .catagory {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.right .messages .catagory h6 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 4px solid var(--color-light);
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.right .messages .catagory .active {
+  border-color: var(--color-dark);
+}
+
+.right .messages .catagory .message-requests {
+  color: var(--color-primary);
+}
+
+.right .messages .message {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.right .messages .message:last-child {
+  margin: 0;
+}
+
+.right .messages .message p {
+  font-size: 0.8rem;
+}
+
+.right .messages .message .profile-photo {
+  position: relative;
+  overflow: visible;
+}
+
+.right .messages .message .profile-photo img {
+  border-radius: 50%;
+}
+
+.right .messages .message .profile-photo .active {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--color-success);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 3px solid var(--color-white);
+}
+
+.right .messages .message .unseen {
+  font-weight: bold;
+  color: var(--color-dark);
 }
