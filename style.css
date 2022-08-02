@@ -375,10 +375,6 @@ main .container .left .profile {
   margin: 0;
 }
 
-/* .middle .feed .liked p {
-  margin: 0.1rem;
-} */
-
 .middle .feed .caption .hashtag {
   color: var(--color-primary);
 }
@@ -386,7 +382,7 @@ main .container .left .profile {
 /* ==========================RIGHT SECTION============================ */
 
 .right {
-  width: auto;
+  width: max-content;
   position: sticky;
   top: var(--sticky-top-right);
 }
@@ -474,4 +470,33 @@ main .container .left .profile {
 .right .messages .message .unseen {
   font-weight: bold;
   color: var(--color-dark);
+}
+
+/* ==========================FRIEND REQUESTS============================ */
+
+.right .friend-requests {
+  margin-top: 1rem;
+}
+
+.right .friend-requests h4 {
+  color: var(--color-grey);
+  margin: 1rem 0;
+}
+
+.right .request {
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  margin-bottom: 0.8rem;
+}
+
+.right .request .info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.right .request .actions {
+  display: flex;
+  gap: 0.5rem;
 }
